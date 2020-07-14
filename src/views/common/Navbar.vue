@@ -41,35 +41,12 @@
         </div>
 
         <div class="navbar-end">
-          <!-- is-hidden-desktop -->
-          <div class="navbar-item" v-show="showSearch">
-            <div class="field is-grouped">
-              <p class="control has-icons-left is-dark" style="width:100%;">
-                <input
-                  class="input is-rounded search-input"
-                  @keyup.enter="query"
-                  v-model="param"
-                  type="search"
-                  :placeholder="$t('search.placeholder')"
-                  style="background-color: rgb(68, 66, 66);border-color: #272727;"
-                />
-                <span class="icon is-small is-left" style="padding:0 5px;">
-                  <!-- <i class="fas fa-search"></i> -->
-                  <img :src="eyes" />
-                </span>
-              </p>
-            </div>
-          </div>
-          <header-locales />
           <a
             class="navbar-item"
-            target="_blank"
             rel="noopener"
-            title="View on github"
-            href="https://github.com/Aicirou/goindex-theme-acrou"
-          >
-            <i class="fab fa-github"></i>
-          </a>
+            title="Home"
+            href="https://dukangxu.com"
+          >Home</a>
           <header-setting />
           <a
             class="navbar-item is-hidden-desktop"
@@ -84,12 +61,10 @@
 </template>
 
 <script>
-import headerLocales from "@/layout/header-aside/components/header-locales";
 import headerSetting from "@/layout/header-aside/components/header-setting";
 import ViewMode from "@/layout/viewmode";
 export default {
   components: {
-    headerLocales,
     headerSetting,
     ViewMode,
   },
